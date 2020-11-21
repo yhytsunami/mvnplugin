@@ -12,6 +12,16 @@ import org.apache.maven.plugins.annotations.Parameter;
  * Date: 2020/11/17
  * Time: 22:04
  * Description:
+ *
+ * 依赖maven-plugin-api，maven-plugin-annotations
+ * 继承AbstractMojo
+ * 注解Mojo
+ * 打包类型maven-plugin
+ * 表明goal前缀goalPrefix
+ *
+ * maven-plugin debug 通过jdwp
+ * 插件运行指定debug模式运行 mvndebug groupId:artifactId:version:goal
+ * 插件源码 remote attach address
  */
 @Mojo(name = "helloMojo" ,defaultPhase = LifecyclePhase.INSTALL)
 public class YHYMojo extends AbstractMojo {
